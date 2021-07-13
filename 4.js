@@ -1,9 +1,9 @@
-﻿function Device(power,weight,brand) {
-  this.power = +power;
-  this.weight = +weight;
-  this.brand = brand;
+function Device(power,weight,brand) {
+  this.eltype = "Electrical",
+  this.power = +power,
+  this.weight = +weight,
+  this.brand = brand
   this.turnOn = false;
-  
 }
 
 Device.prototype.Wire = function(){
@@ -11,10 +11,10 @@ Device.prototype.Wire = function(){
   }
 
 function DeviceType(type,power,weight,brand) {          
-  this.type = type;
-  this.power = +power;
-  this.weight = +weight;
-  this.brand = brand;
+  this.type = type,
+  this.power = +power,
+  this.weight = +weight,
+  this.brand = brand,
   this.show = function() {console.log(`Это ${this.type} марки ${this.brand}`)};
 }
 
